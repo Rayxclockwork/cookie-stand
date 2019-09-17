@@ -1,14 +1,21 @@
 'use strict';
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+function city(name, min, max, avg, total);
+  this.name = name;
+  this.min = min;
+  this.max = max;
+  this.avg = avg;
+  this.salesHour = [];
+  this.total = total;
 
-var seattle = {
-  name : 'Seattle',
-  min : 23,
-  max : 65,
-  avg : 6.3,
-  salesHour : [],// [150, 45, 950, 150, ....]
-  total: 0,
+var seattle = new city('Seattle', 23, 65, 6.3, 0);
+var tokyo = new city('Tokyo', 3, 24, 1.2, 0);
+var dubai = new city('Dubai', 11, 38, 3.7, 0);
+var paris = new city('Paris', 20, 38, 2.3, 0);
+var lima = new cityO('Lima', 2, 16, 4.6, 0);
+
+
   avgCookies: function() {
     for(var i=0; i < hours.length; i++){
       // creates the random number of customers per hour and multplies it by the average number
