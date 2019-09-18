@@ -54,7 +54,7 @@ function createHeader(){
   //empty block before hours
   var newTR = document.createElement('tr');
   var newBox = document.createElement('th');
-  newBox.textContent = '======';
+  newBox.textContent = 'Location';
   newTR.appendChild(newBox);
   //hours header
   for (var i=0; i < hours.length; i++){

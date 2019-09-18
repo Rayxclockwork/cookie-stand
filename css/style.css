@@ -7,7 +7,9 @@ table {
 }
 th {
   border: 1px solid rgb(114, 94, 204);
+  padding: 4px;
 }
 td {
   border: 1px solid rgb(114, 94, 204);
+  padding: 4px;
 }
