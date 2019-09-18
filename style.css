@@ -3,8 +3,11 @@ background-color:
 } */
 
 table {
-  border: 1px solid black;
+  border: 1px solid rgb(114, 94, 204);
 }
 th {
-  border: 1px solid black;
+  border: 1px solid rgb(114, 94, 204);
+}
+td {
+  border: 1px solid rgb(114, 94, 204);
 }
