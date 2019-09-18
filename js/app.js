@@ -25,7 +25,6 @@ City.prototype.avgCookies = function() {
   }
 };
 
-
 function random (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -68,17 +67,28 @@ function createHeader(){
   storeData.appendChild(newTR);
 }
 
-// function createFooter(){
-//   //block before totals per hours
-//   var tR = document.createElement('tr');
-//   var totalsHour = document.createElement('td');
-//   totalsHour.textContent ='Totals Per Hour';
-//   tR.appendChild(totalsHour);
-//   for(var i = 0; i<hours.length; i++){
-//     for(var j = 0; j<stores.length; i++);
-//   }
-//   storeData.appendChild(tR);
-// }
+function createFooter(){
+  //block before totals per hours
+  var tR = document.createElement('tr');
+  var totalsHour = document.createElement('td');
+  totalsHour.textContent ='Totals Per Hour';
+  tR.appendChild(totalsHour);
+  for(var i = 0; i<hours.length; i++){
+    var storesHourlyTotals=0;
+    var td = document.createElement('td');
+
+    for(var j = 0; j< stores.length; j++){
+      //something in this line not working
+      // storesHourlyTotals += stores[j].hours[i];
+      td.textContent = storesHourlyTotals;
+      tR.appendChild(td);
+    }
+  }
+  var tdElem = document.createElement('td');
+  tdElem.textContent = totalsHour;
+  tR.appendChild(tdElem);
+  storeData.appendChild(tR);
+}
 
 
 
@@ -96,4 +106,4 @@ dubai.render();
 paris.render();
 lima.render();
 
-// createFooter();
+createFooter();
