@@ -3,6 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var storeData = document.getElementById('storeData');
 var stores = [];
+var allStoresTotal = 0;
 
 function City(name, min, max, avg){
   this.name = name;
@@ -18,10 +19,11 @@ City.prototype.avgCookies = function() {
   for(var i=0; i < hours.length; i++){
     // creates the random number of customers per hour and multplies it by the average number
     var sales = Math.floor(random(this.min, this.max) * this.avg);
-    console.log(sales);
+    // console.log(sales);
     this.total += sales;
     // updates the SalesHour array with the hourly total of sales
     this.salesHour.push(sales);
+    allStoresTotal += sales;
   }
 };
 
@@ -49,7 +51,9 @@ City.prototype.render = function() {
 };
 
 
-function createHeader(){
+
+
+City.prototype.createHeader = function(){
   //empty block before hours
   var newTR = document.createElement('tr');
   var newBox = document.createElement('th');
@@ -65,30 +69,36 @@ function createHeader(){
   newTotals.textContent = 'Daily Totals';
   newTR.appendChild(newTotals);
   storeData.appendChild(newTR);
-}
+};
 
-function createFooter(){
+City.prototype.createHeader();
+
+
+City.prototype.createFooter = function(){
   //block before totals per hours
   var tR = document.createElement('tr');
   var totalsHour = document.createElement('td');
   totalsHour.textContent ='Totals Per Hour';
   tR.appendChild(totalsHour);
+
   for(var i = 0; i<hours.length; i++){
     var storesHourlyTotals=0;
     var td = document.createElement('td');
 
     for(var j = 0; j< stores.length; j++){
       //something in this line not working
-      // storesHourlyTotals += stores[j].hours[i];
+      storesHourlyTotals += stores[j].salesHour[i];
       td.textContent = storesHourlyTotals;
       tR.appendChild(td);
     }
   }
+
+
   var tdElem = document.createElement('td');
-  tdElem.textContent = totalsHour;
+  tdElem.textContent = allStoresTotal;
   tR.appendChild(tdElem);
   storeData.appendChild(tR);
-}
+};
 
 
 
@@ -98,7 +108,6 @@ var dubai = new City('Dubai', 11, 38, 3.7);
 var paris = new City('Paris', 20, 38, 2.3);
 var lima = new City('Lima', 2, 16, 4.6);
 
-createHeader();
 
 seattle.render();
 tokyo.render();
@@ -106,4 +115,4 @@ dubai.render();
 paris.render();
 lima.render();
 
-createFooter();
+City.prototype.createFooter();
