@@ -52,8 +52,7 @@ City.prototype.render = function() {
 
 
 
-
-City.prototype.createHeader = function(){
+function createHeader(){
   //empty block before hours
   var newTR = document.createElement('tr');
   var newBox = document.createElement('th');
@@ -71,10 +70,10 @@ City.prototype.createHeader = function(){
   storeData.appendChild(newTR);
 };
 
-City.prototype.createHeader();
+createHeader();
 
 
-City.prototype.createFooter = function(){
+function createFooter(){
   //block before totals per hours
   var tR = document.createElement('tr');
   var totalsHour = document.createElement('td');
@@ -115,7 +114,7 @@ dubai.render();
 paris.render();
 lima.render();
 
-City.prototype.createFooter();
+createFooter();
 
 
 var addStoreButton = document.getElementById('addStore');
@@ -133,7 +132,9 @@ function addNewStore (event) {
   var newStore = new City (name, min, max, avg);
   console.log('allStores: ', stores);
 
+  storeData.removeChild(storeData.lastChild);
   newStore.render();
+  createFooter();
 
   event.target.name.value = null;
   event.target.min.value = null;
