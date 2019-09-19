@@ -116,3 +116,27 @@ paris.render();
 lima.render();
 
 City.prototype.createFooter();
+
+
+var addStoreButton = document.getElementById('addStore');
+addStoreButton.addEventListener('submit', addNewStore);
+
+//Create a new store
+function addNewStore (event) {
+  event.preventDefault();
+  var name = event.target.inputElementName.value;
+  var min = event.target.inputMinimumCustomers.value;
+  var max = event.target.inputMaximumCustomers.value;
+  var avg = event.target.inputAvgCookies.value;
+
+
+  var newStore = new City (name, min, max, avg);
+  console.log('allStores: ', stores);
+
+  newStore.render();
+
+  event.target.name.value = null;
+  event.target.min.value = null;
+  event.target.max.value = null;
+  event.target.avg.value = null;
+}

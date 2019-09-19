@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet"  type='text/css' href="css/style.css">
       <title>
         "Salmon Cookies"
       </title>
@@ -16,19 +16,20 @@
         </table>
         <form id="addStore">
           <fieldset>
-
+            <h4>Add New Store:</h4>
             <label>Enter Name of City:</label>
-            <input id='inputElementName' name='inputElementName' placeholder='Name of City Here..'></br>
+            <input id='inputElementName' name='inputElementName' required placeholder='Name of City Here..'></br>
 
             <label>Enter minimum # of Customers:</label>
-            <input id ='inputMinimumCustomers' name='inputMinimumCustomers' placeholder='Minimum number of Customers..'></br>
+            <input id ='inputMinimumCustomers' name='inputMinimumCustomers' required placeholder='Minimum number of Customers..'></br>
 
             <label>Enter maximum # of Customers:</label>
-            <input id='inputMaximumCustomers' name='inputMaximumCustomers' placeholder='Maximum number of Customers..'></br>
+            <input id='inputMaximumCustomers' name='inputMaximumCustomers' required placeholder='Maximum number of Customers..'></br>
 
             <label>Average # of Cookies per Sale</label>
-            <input id='inputAvgCookies' name='inputAvgCookies' placeholder='Average number of cookies per sale...'></br>
+            <input id='inputAvgCookies' name='inputAvgCookies' required placeholder='Average number of cookies per sale...'></br>
             
+            <button id='textBtn' value='submit'>Submit</button>
           </fieldset>
         </form>
       </section>
