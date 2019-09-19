@@ -9,7 +9,7 @@ header img{
   margin-bottom: 8em;
 }
 body {
-background-color: rgb(226, 226, 225);
+background-color: rgba(238, 238, 238, 0.897);
 }
 
 table {
@@ -33,4 +33,4 @@ form{
 }
 h4{
   font-family: 'Turret Road', cursive;
-}
+}                                                                          
