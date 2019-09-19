@@ -1,22 +1,36 @@
-/* body {
-background-color:
-} */
+header{
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(59, 58, 58);
+  font-family: 'Turret Road', cursive;
+}
+header img{
+  width: 30%;
+  margin-bottom: 8em;
+}
+body {
+background-color: rgb(226, 226, 225);
+}
 
 table {
-  border: 1px solid rgb(114, 94, 204);
+  border: 2px solid rgb(59, 57, 68);
+  text-align: center;
+  margin-bottom:2em;
+  border-collapse: collapse;
+  background-color: rgb(233, 127, 66);
 }
 th {
-  border: 1px solid rgb(114, 94, 204);
-  padding: 4px;
+  border: 2px solid rgb(59, 57, 68);
+  padding: 6px;
+  background-color:#BC4C34;
 }
 td {
-  border: 1px solid rgb(114, 94, 204);
+  border: 2px solid rgb(59, 57, 68);
   padding: 4px;
 }
-/* input:invalid {
-  border: 2px dashed red;
+form{
+  width: 35%;
 }
-
-input:valid {
-  border: 2px solid black;
-} */
+h4{
+  font-family: 'Turret Road', cursive;
+}
