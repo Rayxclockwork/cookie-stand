@@ -1,18 +1,29 @@
 header{
+  font-size: 30px;
   text-align: center;
   text-decoration: underline;
   color: rgb(59, 58, 58);
   font-family: 'Turret Road', cursive;
+  float:left;
+  padding:20px;
 }
 header img{
-  width: 30%;
+  width: 40%;
   margin-bottom: 8em;
 }
 body {
 background-color: rgba(238, 238, 238, 0.897);
 }
-
+main{
+  font-family: 'Turret Road', cursive;
+  float:right;
+  padding:20px;
+  text-align:right;
+  font-size: 15px;
+}
 table {
+  font-size: 12px;
+  width:50%;
   border: 2px solid rgb(59, 57, 68);
   text-align: center;
   margin-bottom:2em;
@@ -32,5 +43,7 @@ form{
   width: 35%;
 }
 h4{
+  font-weight:bolder;
+  text-decoration:underline;
   font-family: 'Turret Road', cursive;
 }                                                                          
