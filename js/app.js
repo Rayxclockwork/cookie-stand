@@ -68,7 +68,7 @@ function createHeader(){
   newTotals.textContent = 'Daily Totals';
   newTR.appendChild(newTotals);
   storeData.appendChild(newTR);
-};
+}
 
 createHeader();
 
@@ -97,7 +97,7 @@ function createFooter(){
   tdElem.textContent = allStoresTotal;
   tR.appendChild(tdElem);
   storeData.appendChild(tR);
-};
+}
 
 
 
