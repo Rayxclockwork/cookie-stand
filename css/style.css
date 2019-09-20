@@ -1,49 +1,115 @@
 header{
-  font-size: 30px;
-  text-align: center;
+  font-size: 54px;
   text-decoration: underline;
   color: rgb(59, 58, 58);
   font-family: 'Turret Road', cursive;
   float:left;
-  padding:20px;
+  padding:5px;
 }
+
 header img{
-  width: 40%;
-  margin-bottom: 8em;
+  width: 22%;
+  margin-bottom: 1em;
 }
+
 body {
 background-color: rgba(238, 238, 238, 0.897);
 }
+#cookie{
+  float:right;
+  position:fixed;
+  top:200px;
+  right:10px;
+}
+#family{
+  height:240px;
+  float:right;
+  margin-right:425px;
+}
+
 main{
   font-family: 'Turret Road', cursive;
-  float:right;
-  padding:20px;
+  padding:10px;
   text-align:right;
-  font-size: 15px;
+  font-size: 17px;
+  z-index:1;
+  color:rgb(156, 25, 25);
+  text-decoration: bolder;
+  position:absolute;
+  top:5px;
+  right:5px;
+}
+#intro{
+  height:100px;
+  width:28%;
+  font-size:20px;
+  color: rgba(20, 155, 155, 0.411);
 }
 table {
   font-size: 12px;
   width:50%;
   border: 2px solid rgb(59, 57, 68);
-  text-align: center;
-  margin-bottom:2em;
+  float:right;
+  margin-bottom:1em;
   border-collapse: collapse;
   background-color: rgb(233, 127, 66);
+  margin:0 auto 10px 10px;
+  z-index:1;
 }
+
 th {
   border: 2px solid rgb(59, 57, 68);
-  padding: 6px;
+  padding: 4px;
   background-color:#BC4C34;
 }
+
 td {
   border: 2px solid rgb(59, 57, 68);
   padding: 4px;
 }
+
 form{
   width: 35%;
+  margin: 0 10px;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  text-align:right;
 }
+
 h4{
   font-weight:bolder;
   text-decoration:underline;
   font-family: 'Turret Road', cursive;
-}                                                                          
+}
+
+div {
+  padding:20px;
+}  
+
+#cutter{
+  position:absolute;
+  top:5px;
+  right:5px;
+  z-index:-1;
+  height:30%;
+  width:30%;
+  opacity: 0.4;
+}     
+ #merch{
+   width:13%;
+   position:fixed;
+   bottom:0px;
+ }
+ #merch>img{
+   height:150px;
+ }
+
+#fourfish{
+  text-align:center;
+  opacity:0.5;
+  position:fixed;
+  bottom:0px;
+  left:150px;
+  z-index:-1;
+}
