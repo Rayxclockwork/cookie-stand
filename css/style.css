@@ -45,22 +45,10 @@ main{
   font-size:20px;
   color: rgba(20, 155, 155, 0.411);
 }
-table {
-  font-size: 12px;
-  width:50%;
-  border: 2px solid rgb(59, 57, 68);
-  float:right;
-  margin-bottom:1em;
-  border-collapse: collapse;
-  background-color: rgb(233, 127, 66);
-  margin:0 auto 10px 10px;
-  z-index:1;
-}
 
 th {
   border: 2px solid rgb(59, 57, 68);
   padding: 4px;
-  background-color:#BC4C34;
 }
 
 td {
@@ -68,14 +56,6 @@ td {
   padding: 4px;
 }
 
-form{
-  width: 35%;
-  margin: 0 10px;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-  text-align:right;
-}
 
 h4{
   font-weight:bolder;
