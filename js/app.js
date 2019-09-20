@@ -68,7 +68,7 @@ function createHeader(){
   newTotals.textContent = 'Daily Totals';
   newTR.appendChild(newTotals);
   storeData.appendChild(newTR);
-};
+}
 
 createHeader();
 
@@ -77,7 +77,7 @@ function createFooter(){
   //block before totals per hours
   var tR = document.createElement('tr');
   var totalsHour = document.createElement('td');
-  totalsHour.textContent ='Totals Per Hour';
+  totalsHour.textContent ='Totals Per Hour:';
   tR.appendChild(totalsHour);
 
   for(var i = 0; i<hours.length; i++){
@@ -97,7 +97,7 @@ function createFooter(){
   tdElem.textContent = allStoresTotal;
   tR.appendChild(tdElem);
   storeData.appendChild(tR);
-};
+}
 
 
 
