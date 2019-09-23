@@ -1,7 +1,7 @@
 header{
   font-size: 54px;
   text-decoration: underline;
-  color: rgb(59, 58, 58);
+  color: rgb(131, 131, 131);
   font-family: 'Turret Road', cursive;
   float:left;
   padding:5px;
@@ -76,21 +76,23 @@ footer>a{
   text-decoration: none;
 }
 
-body > section > img:nth-of-type(2) {
-  margin:0 20px;
+body > p > img {
+  margin:0 10px;
+  height:200px;
+  width:250px;
 }
 body>section:nth-of-type(1){
   width:960px;
+  color:rgb(147, 147, 252);
+  height:300px;
+  width:500px;
+  overflow:scroll;
+
 }
 body>p{
   float:left;
   margin: 30px 0;
   margin-right: 30px;
-}
-body > section:nth-of-type(2){
-  margin: 30px 0;
-  width:300px;
-  height:300px;
 }
 
 
