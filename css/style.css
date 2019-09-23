@@ -5,26 +5,16 @@ header{
   font-family: 'Turret Road', cursive;
   float:left;
   padding:5px;
+  width:60%;
 }
 
 header img{
-  width: 22%;
-  margin-bottom: 1em;
+  width: 70%;
 }
 
 body {
 background-color: rgba(238, 238, 238, 0.897);
-}
-#cookie{
-  float:right;
-  position:fixed;
-  top:200px;
-  right:10px;
-}
-#family{
-  height:240px;
-  float:right;
-  margin-right:425px;
+width:960px;
 }
 
 main{
@@ -35,25 +25,20 @@ main{
   z-index:1;
   color:rgb(156, 25, 25);
   text-decoration: bolder;
+  width:960px;
+  height:204px;
+  position:relative;
+  top:0.5px;
+ 
+}
+main img{
   position:absolute;
-  top:5px;
-  right:5px;
-}
-#intro{
-  height:100px;
-  width:28%;
-  font-size:20px;
-  color: rgba(20, 155, 155, 0.411);
-}
-
-th {
-  border: 2px solid rgb(59, 57, 68);
-  padding: 4px;
-}
-
-td {
-  border: 2px solid rgb(59, 57, 68);
-  padding: 4px;
+  top:0.5px;
+  right:0.5px;
+  z-index:-1;
+  opacity:0.5;
+  height:220px;
+  width:30%
 }
 
 
@@ -63,33 +48,57 @@ h4{
   font-family: 'Turret Road', cursive;
 }
 
-div {
-  padding:20px;
-}  
+div img{
+  width:250px;
+  height:375px;
+  padding:6px;
+}
+div img:nth-of-type(2){
+  width:415px;
+}
 
-#cutter{
-  position:absolute;
-  top:5px;
-  right:5px;
-  z-index:-1;
-  height:30%;
-  width:30%;
-  opacity: 0.4;
-}     
- #merch{
-   width:13%;
-   position:fixed;
-   bottom:0px;
- }
- #merch>img{
-   height:150px;
- }
+footer{
+  height:100px;
+  background-color:rgb(211, 250, 237);
+  width:100%;
+  margin-bottom:30px;
+}
+footer>img{
+  margin: 20px 0;
+  float:left;
+  margin-left:10px;
+  height:70px;
+  width:200px;
+}
+footer>a{
+  padding: 50px;
+  float:left;
+  text-decoration: none;
+}
 
-#fourfish{
-  text-align:center;
-  opacity:0.5;
-  position:fixed;
-  bottom:0px;
-  left:150px;
-  z-index:-1;
+body > section > img:nth-of-type(2) {
+  margin:0 20px;
+}
+body>section:nth-of-type(1){
+  width:960px;
+}
+body>p{
+  float:left;
+  margin: 30px 0;
+  margin-right: 30px;
+}
+body > section:nth-of-type(2){
+  margin: 30px 0;
+  width:300px;
+  height:300px;
+}
+
+
+th {   
+border: 2px solid rgb(59, 57, 68);
+padding: 4px;
+}
+td {
+border: 2px solid rgb(59, 57, 68);
+padding: 4px;
 }
