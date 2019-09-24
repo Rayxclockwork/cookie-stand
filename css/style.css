@@ -75,7 +75,10 @@ footer>a{
   float:left;
   text-decoration: none;
 }
-
+h3:first-child{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(51, 118, 177);
+}
 body > p > img {
   margin:0 10px;
   height:200px;
@@ -87,14 +90,17 @@ body>section:nth-of-type(1){
   height:300px;
   width:500px;
   overflow:scroll;
-
+  column-count: 2;
 }
 body>p{
   float:left;
   margin: 30px 0;
   margin-right: 30px;
 }
-
+#storeData{
+  font-family:"Helvetica", sans-serif;
+  background-color: bisque;
+}
 
 th {   
 border: 2px solid rgb(59, 57, 68);
