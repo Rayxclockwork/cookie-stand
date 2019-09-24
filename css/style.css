@@ -47,6 +47,10 @@ h4{
   text-decoration:underline;
   font-family: 'Turret Road', cursive;
 }
+h5{
+  font-size:20px;
+  color:rgb(45, 106, 160);
+}
 
 div img{
   width:250px;
